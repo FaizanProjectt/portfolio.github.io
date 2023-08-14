@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Italianno&display=swap" rel="stylesheet">
+     <!-- remix icon -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Project</title>
+</head>
+<body>
+   <div id="main">
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="active"><i class="ri-home-5-fill"></i>Home</a>
+        <a href="about.html"><i class="ri-user-2-fill"></i>About</a>
+        <a href="educ.html"><i class="ri-folder-user-fill"></i>Education</a>
+        <a href="project.html"><i class="ri-suitcase-fill"></i>Projects</a>
+        <a href="ach.html"><i class="ri-award-line"></i>Achivements</a>
+        <a href="contact.html"><i class="ri-contacts-fill"></i>contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="ri-menu-line"></i>
+        </a>
+
+        <h2>𝙵ẳἶž𝙖η</h2>
+      </div>
+
+    <div id="phead">
+        <h1><i class="ri-suitcase-fill"></i>PROJECTS.</h1>
+    </div>
+
+    <div id="proj">
+        <div id="pr1">
+            <img src="./img/proj.jpg" alt="">
+        </div>
+        <div id="pr2">
+            <div id="im1">
+                <img src="./img/p1.png" alt="">
+                <h2>Online Notes Sharing (May 2023)</h2>
+                <p></p>
+            </div>
+            <div id="im2">
+                <img src="./img/p2.jpg" alt="">
+                <h2>Ecommerce Website (April 2022)</h2>
+            </div>
+        </div>
+    </div>
+
+
+   </div>
+
+   <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+</script>
+    
+</body>
+</html>
