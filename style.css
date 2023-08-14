@@ -1,0 +1,987 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Bricolage Grotesque', sans-serif;
+/* font-family: 'Italianno', cursive; */
+}
+
+/* Add a background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  .topnav h2{
+    color: white;
+    margin: 1vw;
+    margin-left: 90vw;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: hsl(239, 91%, 63%);
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+
+
+
+
+
+#nav{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    border: 2px solid #dadada ;
+    padding: 0 2vw;
+}
+
+#logo{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 2vw 4vw;
+    font-size: 1.6vw;
+}
+
+#nav2{
+    text-align: center;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+}
+
+#nav2>a{
+    text-decoration: none;
+    padding: 1.5vw;
+    color: black;
+    font-size: 1.5vw;
+    font-weight: 300;
+    margin-left: 2vw 4vw;
+}
+
+#nav i{
+    font-size: 3vw;
+    font-weight: 500;
+    display: none;
+} 
+
+/* homepage */
+#page{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+#left{
+    width: 55%;
+    height: 100%;
+    padding: 5vw 4vw;
+    /* background-color: red; */
+}
+
+#left span{
+    color: hsl(3, 100%, 76%);
+}
+
+#left h2{
+    font-size: 3vw;
+    font-weight: 700;
+    padding: 0 3vw;
+}
+
+
+#left h4{
+    font-size: 1.3vw;
+    padding: 3VW 3vw;
+}
+
+#right{
+    width: 55%;
+    height: 80%;
+    padding: 5vw 4vw;
+    /* background-color: royalblue; */
+}
+#left button{
+    margin:0 3vw ;
+    padding: 1vw 3vw;
+    border: none;
+    border-radius: 2px;
+    background-color: hsl(239, 91%, 63%);
+}
+
+#left button a{
+    text-decoration: none;
+    color: white;
+}
+
+#right img{
+    width: 40vw;
+    height: 100%;
+}
+
+/* education section */
+#edu{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    position: relative;
+    background-color: hsl(209, 59%, 22%);
+}
+
+#head{
+    margin: 2vw 30vw;
+    color: lightseagreen;
+    
+}
+
+#head h2{
+    margin: 2vw 3vw;
+    font-size: 2.vw;
+    font-weight: 1000;
+}
+#edl{
+    width: 32%;
+    height: 70%;
+    background-color: whitesmoke;
+    margin: 2vw 1vw;
+    margin-top: 7vw;
+
+}
+
+#edl h2{
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 2.5vw;
+    font-size: 18px;
+    color: green;
+}
+
+#edl img{
+    width: 15vw;
+    margin: 2vw 7vw;
+    border-radius: 50%;
+    border: 2px dotted black;
+}
+
+#edm{
+    width: 32%;
+    height: 70%;
+    background-color: whitesmoke;
+    margin: 2vw 1vw;
+    margin-top: 7vw;
+
+}
+
+#edm h2{
+    text-align: center;
+    justify-content: space-between;
+    font-size: 18px;
+    color: green;
+    
+}
+
+#edm img{
+    width: 15vw;
+    margin: 2vw 7vw;
+    border-radius: 50%;
+    border: 2px dotted black;
+}
+
+#edr{
+    width: 32%;
+    height: 70%;
+    background-color: whitesmoke;
+    margin: 2vw 1vw;
+    margin-top: 7vw;
+}
+
+#edr h2{
+    text-align: center;
+    justify-content: space-between;
+    font-size: 18px;
+    color: green;
+}
+
+#edr img{
+    width: 15vw;
+    margin: 2vw 7vw;
+    border-radius: 50%;
+    border: 2px dotted black;
+}
+
+
+
+/* about page */
+#ab{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+}
+
+#al{
+    width: 45%;
+    height: calc(100% - 80px);
+    
+}
+
+#al img{
+    height: 100%;
+}
+
+#ar{
+    width: 55%;
+    height: calc(100% - 80px);
+    text-align: center;
+    justify-content: space-between;
+    
+    
+}
+
+#ar h2{
+    width: 20vw;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 5vw;
+    padding: 0 22vw;
+    color: blue;
+}
+
+#ar p{
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 10vw;
+    margin-top: 3vw;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+#btn{
+    margin: 2vw ;
+    color: aqua;
+
+}
+
+#btn button{
+    padding: 1vw;
+    background-color: hsl(264, 94%, 57%);
+}
+
+#btn button a{
+    text-decoration: none;
+    color:white;
+}
+
+#btn button a :hover{
+    color:#FEDF90;
+}
+
+
+
+
+
+
+
+/* Achievements */
+
+#heading{
+    text-align: center;
+    justify-content: space-between;
+}
+
+#heading h2{
+    font-size: 2vw;
+    margin-top: 2vw;
+    font-weight: 1000;
+}
+#img{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    position: relative;
+
+}
+#hk{
+    width: 25%;
+    height: 90%;
+    margin-top: 3vw;
+    /* background-color: red; */
+}
+
+#hk img{
+    width: 15vw;
+    height: 12vw;
+    border-radius: 50%;
+    border: 2px dotted black;
+    margin: 5vw 3vw;
+}
+
+#gfg{
+    width: 25%;
+    height: 90%;
+    margin-top: 3vw;
+    /* background-color: green; */
+}
+
+#gfg img{
+    width: 15vw;
+    height: 12vw;
+    border-radius: 50%;
+    border: 2px dotted black;
+    margin: 5vw 3vw;
+}
+
+#cp{
+    width: 25%;
+    height: 90%;
+    margin-top: 3vw;
+    /* background-color: blue; */
+}
+
+#cp img{
+    width: 15vw;
+    height: 12vw;
+    border-radius: 50%;
+    border: 2px dotted black;
+    margin: 5vw 3vw;
+}
+
+#pyth{
+    width: 25%;
+    height: 90%;
+    margin-top: 3vw;
+    /* background-color: yellow; */
+}
+
+#pyth img{
+    width: 15vw;
+    height: 12vw;
+    border-radius: 50%;
+    border: 2px dotted black;
+    margin: 5vw 3vw;
+}
+
+#img h2{
+    text-align: center;
+     justify-content: space-between;
+}
+
+
+/* contact Page */
+
+#con{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    display: flex;
+}
+
+#ccc h1{
+    text-align: center;
+    justify-content: space-between;
+    margin: 3vw;
+    
+}
+
+#cl img{
+    width: 50vw;
+}
+
+#cl h1{
+    text-align: center;
+    justify-content: space-between;
+    color: hsl(350, 73%, 56%);
+}
+
+#cl{
+   width:60%;
+   height: 80%;
+   /* background-color: red; */
+}
+
+#cr{
+    width: 50%;
+    height: 80%;
+    /* background-color: aqua; */
+}
+
+#cr p{
+    text-align: center;
+    justify-content: space-between;
+    margin: 10vw;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: capitalize;
+    line-height: 30px;
+}
+
+/* project section */
+#phead{
+    width: 100%;
+    height: 10%;
+    /* background-color: blueviolet; */
+}
+
+#phead h1{
+    margin: 3vw 45vw;
+    color: hsl(27, 100%, 50%);
+}
+
+#proj{
+    width:100% ;
+    height: 80%;
+    display: flex;
+    position: relative;
+}
+
+#pr1{
+    width: 50%;
+    height: calc(100% - 50px);
+    /* background-color: red; */
+    
+}
+
+#pr1 img{
+    width: 60vw;
+}
+
+#pr2{
+    width: 50%;
+    height: calc(100% - 50px);
+    /* background-color: green; */
+}
+
+#im1{
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+    display: flex;
+}
+
+#im2{
+    width: 100%;
+    height: 50%;
+    /* background-color: aqua; */
+    display: flex;
+}
+
+#im1 img{
+    width: 15vw;
+    border-radius: 50%;
+    border: 5px dotted hsl(43, 96%, 47%);
+    margin: 4vw 4vw;
+}
+
+#im1 h2{
+    text-align: center;
+    padding: 6vw 1vw;
+    color: black;
+    
+}
+
+#im2 img{
+    width: 15vw;
+    border-radius: 50%;
+    border: 5px dotted hsl(43, 96%, 47%);
+    margin: 4vw 4vw;
+}
+
+#im2 h2{
+    text-align: center;
+    padding: 6vw 1vw;
+    color: black;
+    
+}
+
+#section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#maain h1{
+    margin-top: 2vw;
+    text-align: center;
+    justify-content: space-between;
+    color: hsl(2, 100%, 77%);
+}
+
+#maain span{
+    color: hsl(264, 94%, 57%);
+}
+
+
+#sr{
+    width: 50%;
+    height: 90%;
+    /* background-color: red; */
+}
+
+#sr img{
+    height: 90%;
+}
+
+#sl{
+    width: 45%;
+    height: 70%;
+    background-color: #E4D1FF;
+    margin-top: 2vw;
+}
+#sl button{
+    display: block;
+    margin: 2vw;
+    padding: 1.4vw;
+    text-align: center;
+    margin: 1vw 15vw;
+    background-color: hsl(264, 94%, 57%);
+    font-size: 12px;
+    font-weight: 900;
+    /* border:3px solid #333;s */
+    justify-content: space-between;
+    border-radius: 50%;
+
+    
+}
+
+#sl button a{
+    text-decoration: none;
+    text-align: center;
+    margin: 6px;
+    border-width: 2px;
+    color: #dadada;
+    
+    
+}
+
+#sl button:hover{
+    background-color:white;
+    color: #333;
+}
+
+
+
+
+
+
+/* Responsiveness */
+
+@media (max-width:730px){
+   
+    #nav{
+        padding: 0 5vw;
+        height: 50px;
+    }
+
+    #logo{
+        font-size: 3vw;
+        font-weight: 500;
+    }
+
+    #nav2 a {
+        display: none;
+    }
+
+    #nav i{
+         display: block;
+    }
+
+    #page{
+        width: 100%;
+        height: calc(100% - 50px);
+        flex-direction: column;
+    }
+
+    #left{
+        width: 100%;
+        height: 100%;
+        padding: 7vw 7vw;
+        /* background-color: red; */
+    }
+    
+    #left h2{
+        font-size: 5vw;
+        font-weight: 700;
+        padding: 0 3vw;
+    }
+    
+    
+    #left h4{
+        font-size: 3vw;
+        padding: 5VW 4vw;
+    }
+
+    #left button{
+        margin:0 4.5vw ;
+        padding: 3vw 4vw;
+        background-color: hsl(239, 91%, 63%);
+        border: none;
+    }
+
+    #right{
+        width: 100%;
+        height: 100%;
+        padding: 5vw 4vw;
+        /* background-color: royalblue; */
+    }
+
+    #right img{
+        width: 90vw;
+        height: 70%;
+    }
+
+
+    /* Education part Responsiveness */
+
+    #head{
+        margin: 2vw 35vw;
+        color: lightseagreen;
+        
+    }
+    #head h2{
+        margin: 2vw 3vw;
+        font-size: 5vw;
+    }
+    
+
+    #edu{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: hsl(209, 59%, 22%);
+    }
+
+    #edl{
+        width: 90%;
+        height: 60%;
+        background-color: whitesmoke;
+        margin: 2vw 5vw;
+        margin-top: 7vw;
+    
+    }
+    
+    #edl h2{
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 2.5vw;
+        font-size: 4vw;
+    }
+    
+    #edl img{
+        width: 35vw;
+        margin: 2vw 27vw;
+        border-radius: 50%;
+        border: 2px dotted black;
+    }
+    
+    #edm{
+        width: 90%;
+        height: 60%;
+        background-color: whitesmoke;
+        margin: 2vw 5vw;
+        margin-top: 7vw;
+    
+    }
+    
+    #edm h2{
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 2.5vw;
+        font-size: 4vw;
+        
+    }
+    
+    #edm img{
+        width: 35vw;
+        margin: 2vw 27vw;
+        border-radius: 50%;
+        border: 2px dotted black;
+    }
+    
+    #edr{
+        width: 90%;
+        height: 60%;
+        background-color: whitesmoke;
+        margin: 2vw 5vw;
+        margin-top: 7vw;
+    }
+    
+    #edr h2{
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 2.5vw;
+        font-size: 4vw;
+    }
+    
+    #edr img{
+        width: 35vw;
+        margin: 2vw 27vw;
+        border-radius: 50%;
+        border: 2px dotted black;
+    }
+    
+    #ab{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    #al{
+        width: 45%;
+        height: calc(100% - 80px);
+        
+    }
+    
+    #al img{
+        width: 100vw;
+        height: 100%;
+    }
+    
+    #ar h2{
+        text-align: center;
+        margin: 1vw 15vw;
+    }
+
+    #ar p{
+        text-align: center;
+        margin-left: 5vw;
+        width: 80vw;
+    }
+
+    #ar button{
+        margin:10vw;
+        margin-left: 35vw;
+        padding: 3vw;
+
+    }
+
+    button{
+        /* text-align: center; */
+        margin: 20vw;
+        padding: 3vw 3vw;
+    }
+
+    #cl img{
+        width: 100vw;  
+        height: 80%; 
+    }
+
+    #cl h1{
+       margin: 6vw 0;
+    }
+    
+    #cl p{
+        margin: 2vw;
+       font-size: 5vw;
+       font-weight: 400;
+       line-height: 10vw;
+    }
+
+    #heading h2{
+        font-size: 6vw;
+        margin-top: 5vw;
+        background-color: aqua;
+    }
+    
+    #img{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    #img img{
+        width: 50vw;
+        height: 60vw;
+        margin: 4vw 20vw;
+    }
+    #hk{
+        display:contents;
+        text-align: center;
+        
+    }
+
+    #gfg{
+        display:contents;
+        text-align: center;
+        
+    }
+
+    #cp{
+        display:contents;
+        text-align: center;
+        
+    }
+
+    #pyth{
+        display:contents;
+        text-align: center;
+        
+    }
+    
+    #phead h1{
+        margin: 10vw 30vw;
+    }
+
+    #proj{
+        flex-direction: column;
+    }
+    #pr1{
+        width: 100%;
+    }
+
+    #pr1 img{
+        height: 100%;
+        width: 100%;
+    }
+
+    #im1{
+        width: 100%;
+    }   
+    
+    #im2{
+        width: 100%;
+    }
+
+
+    #im1 img{
+        width: 40vw;
+    }
+
+    #im1 h1{
+        display: contents;
+        width: 10%;
+    }
+
+    #im2 img{
+        width: 40vw;
+    }
+
+    .topnav h2{
+        display: none;
+    }
+
+
+
+    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+ 
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+
+    #con{
+        display: block;
+    }
+    #cl{
+        height: 60%;
+    }
+
+
+    #cr{
+        /* margin: 1vw 30vw; */
+        text-align: center;
+        display: contents;
+
+    }
+
+    #section{
+        width: 100%;
+        height: 100%;
+        display: block;
+
+    }
+
+    #sr{
+        height: 50%;
+    }
+
+    #sl{
+        width: 100%;
+        height: 65%;
+        margin: 4vw 3vw;
+        /* margin: 3vw 4vw; */
+        display: inline-block;
+
+
+    }
+
+    #sl button{
+        width: 70%;
+        margin: 3vw 6vw;
+        padding: 5vw 15vw;
+        border-radius: 40%;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    #sl button a{
+        font-size: 25px;
+        font-weight: 800;
+        border: none;
+        border-radius: none;
+        line-height: 5vw;
+        margin: 5vw 3vw;
+        padding: 2vw 3vw;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
